@@ -108,6 +108,7 @@ vim.keymap.set('c', '?', function()
     return '?\\v'
   end
   return '?'
+end, { noremap = true, expr = true })
 ```
 
 That worked for my basic use case, not until I learned more about the `:h global` command and that
