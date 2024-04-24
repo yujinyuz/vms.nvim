@@ -30,9 +30,10 @@ end
 
 local setup_vars = function()
   __setup_cmds('global', g_commands) -- for handling special case `:g!`
-  __setup_cmds('global!', commands)
+  __setup_cmds('global', commands)
   __setup_cmds('vglobal', commands)
   __setup_cmds('substitute', commands)
+  __setup_cmds('global!', commands)
 end
 
 local strip_ranges = function(cmdstr)
