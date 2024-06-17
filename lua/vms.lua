@@ -29,6 +29,7 @@ local __setup_cmds = function(c, t)
 end
 
 local setup_vars = function()
+  -- TODO: Maybe use vim.list_extend?
   __setup_cmds('global', g_commands) -- for handling special case `:g!`
   __setup_cmds('global', commands)
   __setup_cmds('vglobal', commands)
